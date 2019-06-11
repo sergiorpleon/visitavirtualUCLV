@@ -2,35 +2,56 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+        <item android:title="@string/app_menu_title">
+        <menu>
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_visita"
+            android:icon="@drawable/ic_panorama_black_24dp"
+            android:title="@string/app_menu_subtitle_menu" />
+
+        </menu>
+        </item>
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/app_facultades">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_agropecuaria"
+                android:title="@string/title_activity_fca_menu" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_computacion"
+                android:title="@string/title_activity_fmfc_menu" />
+            <item
+                android:id="@+id/nav_construccion"
+                android:title="@string/title_activity_fc_menu" />
+            <item
+                android:id="@+id/nav_economia"
+                android:title="@string/title_activity_fce_menu" />
+            <item
+                android:id="@+id/nav_electrica"
+                android:title="@string/title_activity_fie_menu" />
+            <item
+                android:id="@+id/nav_farmacia"
+                android:title="@string/title_activity_fimifq" />
+            <item
+                android:id="@+id/nav_humanidades"
+                android:title="@string/title_activity_fhcs" />
+            <!--item
+                android:id="@+id/nav_mecaninca"
+                android:title="@string/title_activity_fimi_menu" />
+            <item
+                android:id="@+id/nav_sociales"
+                android:title="@string/title_activity_fcs_menu" / -->
+
+
         </menu>
     </item>
-
+    <item android:title="@string/app_galeria">
+        <menu>
+            <item
+                android:id="@+id/nav_galeria"
+                android:icon="@drawable/ic_photo_library_black_24dp"
+                android:title="@string/title_mostrar" />
+        </menu>
+    </item>
 </menu>

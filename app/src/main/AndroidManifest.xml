@@ -19,6 +19,106 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ImageDialog"
+            android:theme="@style/myDialogTheme" />
+        <activity
+            android:name=".SliderDialog"
+            android:theme="@style/myDialogTheme" />
+        <activity
+            android:name=".FIEActivity"
+            android:label="@string/title_activity_fie"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FQFActivity"
+            android:label="@string/title_activity_fqf"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FIMIActivity"
+            android:label="@string/title_activity_fimi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FCEActivity"
+            android:label="@string/title_activity_fce"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FMFCActivity"
+            android:label="@string/title_activity_fmfc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FHActivity"
+            android:label="@string/title_activity_fh"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FCAActivity"
+            android:label="@string/title_activity_fca"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FCActivity"
+            android:label="@string/title_activity_fc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CBQActivity"
+            android:label="@string/title_activity_cbq"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CEIActivity"
+            android:label="@string/title_activity_cei"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CIDEMActivity"
+            android:label="@string/title_activity_cidem"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CEMNIActivity"
+            android:label="@string/title_activity_cemni"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FCSActivity"
+            android:label="@string/title_activity_fcs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".JardinActivity"
+            android:label="@string/title_activity_jardin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ViewPage_activity" />
+        <activity android:name=".Zoom" />
+        <activity
+            android:name=".CEDActivity"
+            android:label="@string/title_activity_ced"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CIAPActivity"
+            android:label="@string/title_activity_ciap"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CECActivity"
+            android:label="@string/title_activity_cec"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CEEActivity"
+            android:label="@string/title_activity_cee"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CISActivity"
+            android:label="@string/title_activity_cis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CETAActivity"
+            android:label="@string/title_activity_ceta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CEQAActivity"
+            android:label="@string/title_activity_ceqa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CECFDActivity"
+            android:label="@string/title_activity_cecfd"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IBPActivity"
+            android:label="@string/title_activity_ibp"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

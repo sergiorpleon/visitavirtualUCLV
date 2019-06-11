@@ -30,72 +30,50 @@ public class Intermediario {
     }
 
     @JavascriptInterface
-    public void showPano(String pano) {
-
-
-        //Puente.a.cambiarpano(pano);
-
-            Intent intent = new Intent(mContext, MainActivity.class);
-            Bundle bundle = new Bundle();
-            bundle.putString("pano", pano);
-            intent.putExtras(bundle);
-            mContext.startActivity(intent);
-
-
-
-/*
-        WebView myBrowser = (WebView)((Activity)mContext).findViewById(R.id.mybrowser);
-
-        //activamos javascript
-        WebSettings settings = myBrowser.getSettings();
-        settings.setJavaScriptEnabled(true);
-        settings.setDomStorageEnabled(true);
-
-        myBrowser.loadUrl("file:///android_asset/"+pano+".html");
-
-        myBrowser.addJavascriptInterface(new Intermediario(mContext), "Android");
-        */
-    }
-
-    @JavascriptInterface
     public void showToast(String pano) {
         Toast.makeText(mContext, pano, Toast.LENGTH_SHORT).show();
     }
 
     @JavascriptInterface
-    public void showDialog(String pano) {
-        /*
-        //Creacion del Dialogo
-        AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-
-        //inflando el contenido con un layout;
-        LayoutInflater inflater = mContext.getLayoutInflater();
-        View layout = inflater.inflate(R.layout.layout_imagen,(ViewGroup) mContext.findViewById(R.id.lytLayout));
-        builder.setView(layout);
-
-        builder.setPositiveButton("REGRESAR", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        return builder.create();
-        */
-
-        sendMessage(pano);
+    public void showPano(String pano) {
+        sendMessage("pano", pano);
     }
 
+    @JavascriptInterface
+    public void showImagen(String imagen) {
+        sendMessage("imagen", imagen);
+    }
 
+    @JavascriptInterface
+    public void showInfo(String info) {
+        sendMessage("info", info);
+    }
 
-
-
-
+    @JavascriptInterface
+    public void showDialog(String pano) {
+        sendMessage("", pano);
+    }
 
 
     // Send an Intent with an action named "my-event".
-    private void sendMessage(String pano) {
+    private void sendMessage(String type, String pano) {
         Intent intent = new Intent("my-event");
         // add data
+        intent.putExtra("type", type);
         intent.putExtra("message", pano);
+
         LocalBroadcastManager.getInstance(mContext).sendBroadcast(intent);
     }
+
+
+    /**/
+    @JavascriptInterface
+    public void showofGaleria(String imagen) {
+
+        //sendMessage("imagen", imagen);
+        //Toast.makeText(mContext, imagen, Toast.LENGTH_SHORT).show();
+        sendMessage("galeria", imagen);
+
+    }
+
 }
